@@ -102,7 +102,7 @@ p{margin:0}
 .hero-lead{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--slate);max-width:44ch}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .hero-media{position:relative;grid-column:1/-1}
-.hero-media img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:center 60%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
+.hero-media img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;object-position:center 28%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
 .status-card{position:absolute;right:28px;bottom:28px;background:#fff;border-radius:var(--radius-md);padding:16px 20px;box-shadow:0 18px 40px -18px rgba(10,37,64,.35);min-width:240px}
 .status-line{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--navy)}
 .dot{width:9px;height:9px;border-radius:50%;background:#9AA8B5}
@@ -110,7 +110,7 @@ p{margin:0}
 .status-card small{display:block;color:var(--slate);font-size:.9rem;margin-top:4px}
 @media (max-width:880px){
   .hero-grid{grid-template-columns:1fr;row-gap:24px}
-  .hero-media img{aspect-ratio:4/3;object-position:68% 90%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}
+  .hero-media img{aspect-ratio:4/3;object-position:58% 30%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}
   .status-card{right:auto;left:12px;bottom:12px;min-width:0;padding:12px 16px}
   .hero h1{max-width:none}
 }
@@ -305,7 +305,7 @@ p{margin:0}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
 .hero h1 .ln > span{display:block}
 .hero-photo{position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
-.hero-media img{border-radius:0;transform-origin:65% 70%}
+.hero-media img{border-radius:0;transform-origin:56% 38%}
 @media (max-width:880px){.hero-photo{border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}}
 .js .hero .offer{animation:fadeup .7s var(--ease) .05s both}
 .js .hero h1 .ln > span{animation:rise .9s var(--ease) both}
@@ -457,7 +457,7 @@ p{margin:0}
       </div>
     </div>
     <div class="hero-media">
-      <div class="hero-photo"><img src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2019/11/Dise%C3%B1o-sin-t%C3%ADtulo-2019-11-27T201846.929.jpg?w=1920&ssl=1" alt="Gabinete de la clínica Star Dental con equipo de radiología digital" width="1920" height="807" fetchpriority="high"></div>
+      <div class="hero-photo"><img src="images/sonrisa-hero.webp" alt="Mujer sonriendo con una sonrisa cuidada" width="1536" height="1024" fetchpriority="high"></div>
       <div class="status-card" aria-live="polite">
         <span class="status-line"><span class="dot" id="status-dot"></span><span id="status-text">Lunes a viernes</span></span>
         <small id="status-sub">10:00 – 14:00 y 16:00 – 20:00</small>
