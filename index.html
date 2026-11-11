@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Dental en Boadilla del Monte | Star Dental</title>
+<meta name="description" content="Star Dental, centro de especialidades odontológicas en Boadilla del Monte. Un especialista para cada área: ortodoncia, implantes, estética, endodoncia y odontopediatría. Primera consulta gratuita.">
+<link rel="icon" href="https://stardentalgroup.es/wp-content/uploads/2019/10/Dise%C3%B1o-sin-t%C3%ADtulo-27.png">
+<script>
+  /* Motion only when supported and wanted; without this class everything stays visible */
+  (function(d){try{if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js')}}catch(e){}})(document.documentElement);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Star Dental Group",
+  "url": "https://stardentalgroup.es",
+  "telephone": "+34915273670",
+  "email": "info@stardentalgroup.es",
+  "address": {"@type": "PostalAddress","streetAddress": "Avenida Nuevo Mundo, 7","postalCode": "28660","addressLocality": "Boadilla del Monte","addressRegion": "Madrid","addressCountry": "ES"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "10:00","closes": "14:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "16:00","closes": "20:00"}
+  ],
+  "sameAs": ["https://www.facebook.com/stardentalgroupboadilla/","https://www.instagram.com/stardentalgroupboadilla/"]
+}
+</script>
+<style>
+:root{
+  --blue:#0C54A0;
+  --blue-deep:#083B72;
+  --navy:#0A2540;
+  --mist:#EEF4FA;
+  --line:#D3E0EE;
+  --slate:#526371;
+  --ink:#15212D;
+  --paper:#FFFFFF;
+  --wa:#1C9E50;
+  --radius-lg:28px;
+  --radius-md:16px;
+  --radius-sm:10px;
+  --wrap:1200px;
+  --gutter:clamp(16px,4vw,40px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Onest",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.02em;font-weight:600}
+p{margin:0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* star sparkle from the logo, used sparingly */
+.spark{width:14px;height:14px;flex:none;color:var(--blue)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:600 1rem/1 "Onest",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-light:hover{background:var(--mist)}
+.btn-outline-light{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-outline-light:hover{border-color:#fff}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.site-header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.brand img{height:52px;width:auto}
+.nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-weight:500;color:var(--slate);font-size:.975rem}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{text-decoration:none;font-weight:600;color:var(--ink);font-size:.975rem;white-space:nowrap}
+.nav-cta .btn{min-height:44px;padding:0 18px;font-size:.95rem}
+.menu-btn{display:none;background:none;border:0;padding:10px;margin-right:-10px;cursor:pointer;color:var(--ink)}
+.menu-btn svg{width:26px;height:26px}
+@media (max-width:980px){
+  .nav-links,.nav-phone{display:none}
+  .menu-btn{display:block}
+  .nav-cta .btn{display:none}
+  .site-header.open .nav-links{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px var(--gutter) 20px}
+  .site-header.open .nav-links a{display:block;padding:14px 0;font-size:1.1rem;color:var(--ink);border-bottom:1px solid var(--mist)}
+}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(40px,6vw,80px)}
+.hero-grid{display:grid;grid-template-columns:1.6fr 1fr;column-gap:clamp(28px,5vw,72px);row-gap:clamp(32px,4vw,52px);align-items:end}
+.offer{display:inline-flex;align-items:center;gap:10px;background:var(--mist);color:var(--blue-deep);font-weight:600;font-size:.95rem;padding:8px 16px 8px 12px;border-radius:999px;margin-bottom:24px}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.75rem);letter-spacing:-.04em;line-height:1;color:var(--navy);max-width:16ch;text-wrap:balance}
+.hero-lead{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--slate);max-width:44ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-media{position:relative;grid-column:1/-1}
+.hero-media img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:center 60%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
+.status-card{position:absolute;right:28px;bottom:28px;background:#fff;border-radius:var(--radius-md);padding:16px 20px;box-shadow:0 18px 40px -18px rgba(10,37,64,.35);min-width:240px}
+.status-line{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--navy)}
+.dot{width:9px;height:9px;border-radius:50%;background:#9AA8B5}
+.dot.on{background:#1C9E50;box-shadow:0 0 0 4px rgba(28,158,80,.15)}
+.status-card small{display:block;color:var(--slate);font-size:.9rem;margin-top:4px}
+@media (max-width:880px){
+  .hero-grid{grid-template-columns:1fr;row-gap:24px}
+  .hero-media img{aspect-ratio:4/3;object-position:68% 90%;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}
+  .status-card{right:auto;left:12px;bottom:12px;min-width:0;padding:12px 16px}
+  .hero h1{max-width:none}
+}
+@media (max-width:480px){.hero-actions .btn{width:100%}}
+
+/* facts strip */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{display:flex;gap:12px;align-items:flex-start;padding:24px 20px 24px 0}
+.facts li+li{padding-left:20px;border-left:1px solid var(--line)}
+.facts strong{display:block;font-weight:600;color:var(--navy);line-height:1.3}
+.facts span{font-size:.92rem;color:var(--slate);line-height:1.45}
+.facts .spark{margin-top:4px}
+@media (max-width:880px){
+  .facts ul{grid-template-columns:1fr 1fr}
+  .facts li{padding:20px 12px 20px 0}
+  .facts li+li{padding-left:0;border-left:0}
+  .facts li:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+  .facts li:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:420px){
+  .facts ul{grid-template-columns:1fr}
+  .facts li:nth-child(even){padding-left:0;border-left:0}
+  .facts li+li{border-top:1px solid var(--line)}
+}
+
+/* sections */
+.section{padding:clamp(64px,9vw,120px) 0}
+.section-head{max-width:640px;margin-bottom:clamp(32px,4vw,52px)}
+.section-head h2{font-size:clamp(1.9rem,3.4vw,2.85rem);color:var(--navy)}
+.section-head p{margin-top:16px;color:var(--slate);font-size:1.1rem}
+
+/* treatment directory — the signature element */
+.directory{display:grid;grid-template-columns:300px 1fr;gap:clamp(20px,3vw,40px);align-items:start}
+.areas{display:flex;flex-direction:column;gap:4px;position:sticky;top:100px}
+.area-tab{all:unset;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:16px 18px;border-radius:var(--radius-sm);cursor:pointer;font-weight:500;color:var(--slate);transition:background .2s,color .2s}
+.area-tab .count{font-size:.85rem;color:#8796A4;font-variant-numeric:tabular-nums}
+.area-tab:hover{background:var(--mist);color:var(--ink)}
+.area-tab[aria-selected="true"]{background:var(--blue);color:#fff}
+.area-tab[aria-selected="true"] .count{color:rgba(255,255,255,.75)}
+.area-tab:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.panel{background:var(--mist);border-radius:var(--radius-lg);padding:clamp(24px,3.5vw,44px);display:grid;grid-template-columns:1fr 260px;gap:clamp(24px,3vw,44px)}
+.panel[hidden]{display:none}
+.panel.enter{animation:panelIn .35s ease both}
+@keyframes panelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel h3{font-size:clamp(1.5rem,2.4vw,2rem);color:var(--navy)}
+.panel-intro{margin-top:12px;color:var(--slate);max-width:52ch}
+.treatments{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0}
+.treatments li{padding:18px 0;border-top:1px solid var(--line)}
+.treatments li:last-child{border-bottom:1px solid var(--line)}
+.treatments h4{margin:0;font-size:1.08rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:10px}
+.treatments p{margin-top:6px;color:var(--slate);font-size:.98rem;max-width:60ch}
+.treatments a{display:inline-block;margin-top:8px;font-size:.92rem;font-weight:600;color:var(--blue);text-underline-offset:3px}
+.panel-cta{margin-top:28px}
+.specialists{display:flex;flex-direction:column;gap:16px}
+.specialists-title{font-size:.95rem;font-weight:600;color:var(--slate)}
+.doc{background:#fff;border-radius:var(--radius-md);overflow:hidden}
+.doc img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;background:var(--line)}
+.doc div{padding:14px 16px 16px}
+.doc strong{display:block;color:var(--navy);font-weight:600;line-height:1.3}
+.doc span{display:block;font-size:.88rem;color:var(--slate);line-height:1.4;margin-top:2px}
+.doc em{display:block;font-style:normal;font-size:.82rem;color:#7A8996;margin-top:6px;font-variant-numeric:tabular-nums}
+.general-note{background:#fff;border-radius:var(--radius-md);padding:20px}
+.general-note p{color:var(--slate);font-size:.95rem}
+.general-note strong{color:var(--navy)}
+@media (max-width:980px){
+  .directory{grid-template-columns:1fr}
+  .areas{position:static;flex-direction:row;overflow-x:auto;gap:8px;margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 6px;scrollbar-width:none}
+  .areas::-webkit-scrollbar{display:none}
+  .area-tab{width:auto;flex:none;padding:12px 16px;border:1px solid var(--line);border-radius:999px;white-space:nowrap}
+  .area-tab[aria-selected="true"]{border-color:var(--blue)}
+  .panel{grid-template-columns:1fr}
+  .specialists{flex-direction:row;flex-wrap:wrap}
+  .doc{flex:1 1 220px;display:flex;align-items:center}
+  .doc img{width:96px;flex:none;aspect-ratio:1/1}
+  .specialists-title{flex-basis:100%}
+}
+
+/* emergency band */
+.urgent{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:clamp(28px,4vw,48px);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.urgent h2{font-size:clamp(1.6rem,2.8vw,2.3rem)}
+.urgent p{margin-top:10px;color:#B9C8D8;max-width:52ch}
+.urgent-num{display:block;margin-top:14px;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:600;letter-spacing:-.01em;text-decoration:none;color:#fff;font-variant-numeric:tabular-nums}
+.urgent-actions{display:flex;flex-direction:column;gap:12px}
+@media (max-width:760px){.urgent{grid-template-columns:1fr}.urgent-actions .btn{width:100%}}
+
+/* first visit steps */
+.visit{background:var(--mist)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.5vw,32px);counter-reset:s}
+.steps li{counter-increment:s;padding-top:28px;border-top:2px solid var(--blue)}
+.steps li::before{content:counter(s);display:block;font-size:2.6rem;font-weight:600;color:var(--blue);line-height:1;letter-spacing:-.03em;margin-bottom:16px}
+.steps h3{font-size:1.25rem;color:var(--navy)}
+.steps p{margin-top:10px;color:var(--slate)}
+.visit-cta{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.visit-cta small{color:var(--slate);font-size:.95rem}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* clinic / why */
+.clinic-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.photo-stack{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:14px}
+.photo-stack img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md)}
+.photo-stack .p1{grid-row:span 2;aspect-ratio:3/4;border-radius:var(--radius-md) var(--radius-md) var(--radius-md) 80px}
+.photo-stack .p2,.photo-stack .p3{aspect-ratio:1/1}
+.reasons{list-style:none;margin:0;padding:0}
+.reasons li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.reasons li:last-child{border-bottom:1px solid var(--line)}
+.reasons .spark{margin-top:6px}
+.reasons h3{font-size:1.15rem;color:var(--navy)}
+.reasons p{margin-top:6px;color:var(--slate);font-size:.98rem}
+@media (max-width:880px){.clinic-grid{grid-template-columns:1fr}.photo-stack{order:2}}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,24px)}
+.member img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 15%;border-radius:var(--radius-md);background:var(--mist)}
+.member h3{margin-top:14px;font-size:1.08rem;color:var(--navy);letter-spacing:-.01em}
+.member p{font-size:.92rem;color:var(--slate);line-height:1.4;margin-top:4px}
+.member small{display:block;margin-top:4px;font-size:.82rem;color:#7A8996;font-variant-numeric:tabular-nums}
+@media (max-width:880px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .section-head h2{color:#fff}
+.contact .section-head p{color:#B9C8D8}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,4vw,56px)}
+.contact-list{list-style:none;margin:0;padding:0}
+.contact-list li{padding:18px 0;border-top:1px solid rgba(255,255,255,.14)}
+.contact-list .label{display:block;font-size:.9rem;color:#8FA5BC;margin-bottom:4px}
+.contact-list a,.contact-list address{font-style:normal;font-size:1.1rem;font-weight:500;color:#fff;text-decoration:none}
+.contact-list a:hover{text-decoration:underline;text-underline-offset:3px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:6px 0;color:#DCE6F0;font-size:1rem}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:#fff;font-weight:600}
+.hours tr.closed td:last-child{color:#8FA5BC}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.socials{display:flex;gap:10px;margin-top:20px}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff}
+.socials a:hover{border-color:#fff}
+.socials svg{width:20px;height:20px}
+.map{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:420px;background:#12325A}
+.map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-load{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px}
+.map-load p{color:#DCE6F0;font-size:.95rem;max-width:34ch}
+@media (max-width:880px){.contact-grid{grid-template-columns:1fr}.map{min-height:320px}}
+
+/* footer */
+.site-footer{background:#071B30;color:#8FA5BC;padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:.92rem}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+.footer-logo{background:#fff;border-radius:12px;padding:8px 14px;display:inline-block}
+.footer-logo img{height:40px;width:auto}
+.legal{display:flex;flex-wrap:wrap;gap:18px}
+.legal a{color:#B9C8D8;text-decoration:none}
+.legal a:hover{color:#fff;text-decoration:underline}
+.owner{margin:12px 0 0;color:#B9C8D8;line-height:1.55}
+.map-load p a{color:#fff;text-underline-offset:3px}
+
+/* floating WhatsApp (desktop) + bottom bar (mobile) */
+.wa-float{position:fixed;right:24px;bottom:24px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.45);transition:transform .2s}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:30px;height:30px}
+.mobile-bar{display:none}
+@media (max-width:760px){
+  .wa-float{display:none}
+  .mobile-bar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}
+  .mobile-bar .btn{min-height:48px;padding:0 12px;font-size:.95rem}
+  .mobile-bar .btn-wa{background:var(--wa);color:#fff}
+  .site-footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+}
+
+/* =====================================================================
+   Motion layer. Budget: "Vivo" tuned calm for a health brand
+   (600–900 ms, 16–24 px). One orchestrated moment in the hero;
+   everything else answers scrolling or the visitor's actions.
+   ===================================================================== */
+:root{--ease:cubic-bezier(.2,.7,.2,1);--m-dist:24px}
+@media (max-width:640px){:root{--m-dist:16px}}
+
+/* header compacts on scroll; nav underline grows */
+.nav{transition:height .35s var(--ease)}
+.brand img{transition:height .35s var(--ease)}
+.site-header.scrolled{box-shadow:0 10px 30px -24px rgba(10,37,64,.55)}
+.site-header.scrolled .nav{height:64px}
+.site-header.scrolled .brand img{height:44px}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after,.nav-links a:focus-visible::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--blue)}
+@media (max-width:980px){.nav-links a::after{display:none}}
+
+/* hero: the one orchestrated moment */
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .ln > span{display:block}
+.hero-photo{position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
+.hero-media img{border-radius:0;transform-origin:65% 70%}
+@media (max-width:880px){.hero-photo{border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}}
+.js .hero .offer{animation:fadeup .7s var(--ease) .05s both}
+.js .hero h1 .ln > span{animation:rise .9s var(--ease) both}
+.js .hero h1 .ln:nth-child(2) > span{animation-delay:.12s}
+.js .hero-copy{animation:fadeup .8s var(--ease) .4s both}
+.js .hero-photo{animation:unveil 1.2s var(--ease) .3s both}
+.js .hero-media img{animation:settle 2.2s var(--ease) .3s both, kenburns 22s ease-in-out 2.5s infinite alternate}
+.js .status-card{animation:pop .7s var(--ease) 1.2s both}
+.status-card .dot.on{animation:live 2.4s ease-out infinite}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes unveil{from{clip-path:inset(18% 0 0 0 round 28px)}to{clip-path:inset(0 0 0 0 round 0)}}
+@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.06) translateY(-1.5%)}}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes live{0%{box-shadow:0 0 0 0 rgba(28,158,80,.45)}70%,100%{box-shadow:0 0 0 9px rgba(28,158,80,0)}}
+
+/* treatment marquee band (real treatment names) */
+.band{background:var(--blue);color:#fff;overflow:clip;isolation:isolate}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 48s linear infinite}
+.marquee:hover .marquee-track,.marquee.off .marquee-track{animation-play-state:paused}
+.marquee-track a{display:flex;align-items:center;gap:22px;padding:18px 0 18px 22px;color:#fff;text-decoration:none;font-weight:500;font-size:1.05rem;white-space:nowrap;opacity:.92;transition:opacity .2s}
+.marquee-track a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.marquee-track .spark{color:#9CC2EA;width:12px;height:12px}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* pause control for continuous motion (WCAG 2.2.2) */
+.band{position:relative}
+.motion-toggle{position:absolute;right:max(10px,calc((100vw - 1200px)/2 + 10px));top:50%;transform:translateY(-50%);z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:var(--blue-deep);color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .2s,border-color .2s}
+.motion-toggle:hover{border-color:#fff;background:var(--navy)}
+.motion-toggle:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.motion-toggle svg{width:18px;height:18px}
+.motion-toggle .i-play,.motion-toggle[aria-pressed="true"] .i-pause{display:none}
+.motion-toggle[aria-pressed="true"] .i-play{display:block}
+.motion-paused .marquee-track,.motion-paused .hero-media img,.motion-paused .urgent-actions .btn-light svg,.motion-paused .wa-float::before,.motion-paused .status-card .dot.on{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){.motion-toggle{display:none}}
+
+/* scroll reveal (hidden only once JS marked <html class="js">) */
+.js .rv{opacity:0;transform:translateY(var(--m-dist));transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.rv-scale{transform:scale(.965)}
+.js .rv.in{opacity:1;transform:none}
+
+/* treatment directory: rows cascade in when an area opens */
+.panel.enter .treatments li,.panel.enter .doc,.panel.enter .general-note{animation:fadeup .5s var(--ease) both}
+.panel.enter .treatments li:nth-child(2){animation-delay:.05s}
+.panel.enter .treatments li:nth-child(3){animation-delay:.1s}
+.panel.enter .treatments li:nth-child(4){animation-delay:.15s}
+.panel.enter .treatments li:nth-child(5){animation-delay:.2s}
+.panel.enter .doc{animation-delay:.12s}
+.panel.enter .doc + .doc{animation-delay:.2s}
+.doc img{transition:transform .8s var(--ease)}
+.doc:hover img{transform:scale(1.05)}
+.doc{overflow:hidden}
+.area-tab .count{transition:transform .3s var(--ease)}
+.area-tab:hover .count{transform:translateX(-3px)}
+
+/* steps: blue rule draws in, in order */
+.steps li{position:relative;border-top-color:var(--line)}
+.steps li::after{content:"";position:absolute;left:0;right:0;top:-2px;height:2px;background:var(--blue);transform:scaleX(1);transform-origin:left}
+.js .steps li.rv::after{transform:scaleX(0);transition:transform 1s var(--ease) calc(var(--d,0s) + .25s)}
+.js .steps li.rv.in::after{transform:scaleX(1)}
+
+/* photos and portraits: slow zoom on hover */
+.photo-stack img,.member img{transition:transform .8s var(--ease)}
+.photo-stack > *{overflow:hidden}
+.zoom{overflow:hidden;border-radius:var(--radius-md)}
+.zoom:hover img,.member:hover img{transform:scale(1.05)}
+.member .zoom{border-radius:var(--radius-md)}
+.member .zoom img{border-radius:0}
+
+/* urgent band: phone icon rings softly */
+.urgent-actions .btn-light svg{animation:ring 4s var(--ease) 1.5s infinite;transform-origin:50% 50%}
+@keyframes ring{0%,86%,100%{transform:rotate(0)}88%{transform:rotate(-14deg)}90%{transform:rotate(12deg)}92%{transform:rotate(-10deg)}94%{transform:rotate(6deg)}}
+
+/* buttons: lift + a light sweep */
+.btn{position:relative;overflow:hidden;transition:background .2s,color .2s,border-color .2s,transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn-primary,.mobile-bar .btn-wa{box-shadow:0 8px 20px -12px rgba(12,84,160,.8)}
+.btn-primary:hover,.btn-light:hover{transform:translateY(-2px);box-shadow:0 14px 28px -12px rgba(12,84,160,.75)}
+.btn-primary::after,.btn-light::after,.btn-wa::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease);pointer-events:none}
+.btn-light::after{background:linear-gradient(100deg,transparent 30%,rgba(12,84,160,.12) 50%,transparent 70%)}
+.btn-primary:hover::after,.btn-light:hover::after,.btn-wa:hover::after{transform:translateX(120%)}
+.btn:active{transform:translateY(0) scale(.98)}
+
+/* WhatsApp float: pulse ring, appears after the hero */
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.8}to{transform:scale(1.6);opacity:0}}
+.js .wa-float{opacity:0;transform:translateY(16px) scale(.9);pointer-events:none;transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.js .wa-float.show{opacity:1;transform:none;pointer-events:auto}
+.js .wa-float.show:hover{transform:scale(1.06)}
+
+/* scroll progress hairline under the header */
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--blue);transform:scaleX(var(--sp,0));transform-origin:left;pointer-events:none}
+
+/* reduced motion: everything static and visible */
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none}
+  .js .wa-float{opacity:1;transform:none;pointer-events:auto}
+  .marquee-track{animation:none}
+  .progress{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.7 6.4 5.6 11.3 12 12-6.4.7-11.3 5.6-12 12-.7-6.4-5.6-11.3-12-12C6.4 11.3 11.3 6.4 12 0z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <nav class="wrap nav" aria-label="Principal">
+    <a class="brand" href="#top" aria-label="Star Dental, inicio">
+      <img src="https://stardentalgroup.es/wp-content/uploads/2019/10/Dise%C3%B1o-sin-t%C3%ADtulo-27.png" alt="Star Dental, Centro de Especialidades Odontológicas" width="99" height="52">
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#tratamientos">Tratamientos</a></li>
+      <li><a href="#primera-visita">Primera visita</a></li>
+      <li><a href="#clinica">La clínica</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+34915273670">915 273 670</a>
+      <a class="btn btn-primary" data-wa href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-title">
+      <p class="offer"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Tu primera consulta, gratis</p>
+      <h1><span class="ln"><span>Tu sonrisa,</span></span> <span class="ln"><span>en manos expertas</span></span></h1>
+    </div>
+    <div class="hero-copy">
+      <p class="hero-lead">Tu clínica dental en Boadilla del Monte, con un especialista para cada área de la odontología. Trato personalizado y cercano, tecnología de vanguardia y materiales de primera calidad.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-wa href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+34915273670"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar al 915 273 670</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-photo"><img src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2019/11/Dise%C3%B1o-sin-t%C3%ADtulo-2019-11-27T201846.929.jpg?w=1920&ssl=1" alt="Gabinete de la clínica Star Dental con equipo de radiología digital" width="1920" height="807" fetchpriority="high"></div>
+      <div class="status-card" aria-live="polite">
+        <span class="status-line"><span class="dot" id="status-dot"></span><span id="status-text">Lunes a viernes</span></span>
+        <small id="status-sub">10:00 – 14:00 y 16:00 – 20:00</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Por qué Star Dental">
+  <div class="wrap">
+    <ul data-stagger>
+      <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><strong>Primera consulta gratuita</strong><span>Diagnóstico y plan de tratamiento personalizado</span></div></li>
+      <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><strong>Un especialista por área</strong><span>Atención multidisciplinar</span></div></li>
+      <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><strong>Financiación a medida</strong><span>Paga tu tratamiento de la forma más cómoda</span></div></li>
+      <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><strong>Todas las aseguradoras</strong><span>Trabajamos con todas las compañías</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" aria-label="Tratamientos que ofrecemos">
+  <button class="motion-toggle" type="button" aria-pressed="false" id="motion-toggle">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+    <span class="sr" id="motion-label">Pausar animaciones</span>
+  </button>
+  <div class="marquee" data-marquee>
+    <div class="marquee-track">
+      <a href="#tratamientos" data-area="t-orto"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Ortodoncia</a>
+      <a href="#tratamientos" data-area="t-orto"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Ortodoncia invisible</a>
+      <a href="#tratamientos" data-area="t-impl"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Implantología</a>
+      <a href="#tratamientos" data-area="t-impl"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Cirugía bucal</a>
+      <a href="#tratamientos" data-area="t-est"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Estética dental</a>
+      <a href="#tratamientos" data-area="t-est"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Carillas dentales</a>
+      <a href="#tratamientos" data-area="t-est"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Blanqueamiento dental</a>
+      <a href="#tratamientos" data-area="t-est"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Prótesis</a>
+      <a href="#tratamientos" data-area="t-endo"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Endodoncia</a>
+      <a href="#tratamientos" data-area="t-ped"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Odontopediatría</a>
+      <a href="#tratamientos" data-area="t-gen"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Limpieza dental</a>
+      <a href="#tratamientos" data-area="t-gen"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Periodoncia</a>
+      <a href="#tratamientos" data-area="t-gen"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Odontología conservadora</a>
+      <a href="#tratamientos" data-area="t-gen"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Bruxismo</a>
+      <a href="#tratamientos" data-area="t-gen"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Radiología dental</a>
+      <a href="#contacto"><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>Urgencias dentales</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tratamientos">
+  <div class="wrap">
+    <div class="section-head rv">
+      <h2>Cada tratamiento, en manos de su especialista</h2>
+      <p>Elige un área para ver los tratamientos que ofrecemos y quién te atenderá. Si no sabes por dónde empezar, en la primera consulta gratuita te asesoramos.</p>
+    </div>
+
+    <div class="directory rv" style="--d:.1s">
+      <div class="areas" role="tablist" aria-label="Áreas de tratamiento">
+        <button class="area-tab" role="tab" id="t-orto" aria-controls="p-orto" aria-selected="true">Ortodoncia<span class="count">2</span></button>
+        <button class="area-tab" role="tab" id="t-impl" aria-controls="p-impl" aria-selected="false" tabindex="-1">Implantes y cirugía<span class="count">2</span></button>
+        <button class="area-tab" role="tab" id="t-est" aria-controls="p-est" aria-selected="false" tabindex="-1">Prótesis y estética<span class="count">4</span></button>
+        <button class="area-tab" role="tab" id="t-endo" aria-controls="p-endo" aria-selected="false" tabindex="-1">Endodoncia<span class="count">1</span></button>
+        <button class="area-tab" role="tab" id="t-ped" aria-controls="p-ped" aria-selected="false" tabindex="-1">Odontopediatría<span class="count">1</span></button>
+        <button class="area-tab" role="tab" id="t-gen" aria-controls="p-gen" aria-selected="false" tabindex="-1">Salud y prevención<span class="count">5</span></button>
+      </div>
+
+      <div>
+        <!-- Ortodoncia -->
+        <article class="panel" role="tabpanel" id="p-orto" aria-labelledby="t-orto">
+          <div>
+            <h3>Ortodoncia</h3>
+            <p class="panel-intro">Alineamos los dientes y corregimos la mordida para conseguir armonía dental, funcional y estética facial.</p>
+            <ul class="treatments">
+              <li><h4>Ortodoncia</h4><p>Especialidad que tiene como objetivo la alineación de los dientes y/o la corrección de la mordida.</p><a href="https://stardentalgroup.es/ortodoncia-boadilla/">Más sobre ortodoncia</a></li>
+              <li><h4>Ortodoncia invisible con Invisalign</h4><p>Alinea tus dientes de forma discreta, cómoda y efectiva. Sin metal, sin restricciones y con resultados predecibles.</p><a href="https://stardentalgroup.es/ortodoncia-invisible-boadilla/">Más sobre ortodoncia invisible</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="ortodoncia" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar ortodoncia</a>
+          </div>
+          <aside class="specialists">
+            <p class="specialists-title">Te atienden</p>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dr-jaime-lopez-alvarado-ortodoncia-web.jpg?w=520&ssl=1" alt="Dr. Jaime López Alvarado"><div><strong>Dr. Jaime López Alvarado</strong><span>Ortodoncia</span><em>COEM 28013833</em></div></div>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-yanetsi-colmenares-penaloza-ortodoncia-web.jpg?w=520&ssl=1" alt="Dra. Yanetsi Colmenares"><div><strong>Dra. Yanetsi Colmenares</strong><span>Ortodoncia</span><em>COEM 28013129</em></div></div>
+          </aside>
+        </article>
+
+        <!-- Implantes -->
+        <article class="panel" role="tabpanel" id="p-impl" aria-labelledby="t-impl" hidden>
+          <div>
+            <h3>Implantes y cirugía bucal</h3>
+            <p class="panel-intro">Reemplazamos los dientes perdidos o dañados y realizamos todos los procedimientos que requieren un abordaje quirúrgico.</p>
+            <ul class="treatments">
+              <li><h4>Implantología</h4><p>Los implantes dentales son tornillos, generalmente de titanio, un material biocompatible, que se colocan en los huesos maxilares para reemplazar uno o más dientes.</p><a href="https://stardentalgroup.es/implantes-dentales-boadilla/">Más sobre implantes</a></li>
+              <li><h4>Cirugía bucal</h4><p>Abarca todos los procedimientos que requieren un abordaje quirúrgico.</p><a href="https://stardentalgroup.es/cirugia-bucal-boadilla/">Más sobre cirugía bucal</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="implantes dentales" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar implantes</a>
+          </div>
+          <aside class="specialists">
+            <p class="specialists-title">Te atiende</p>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dr-luca-piccin-cirugia-implantes-web2.jpg?w=520&ssl=1" alt="Dr. Luca Piccin"><div><strong>Dr. Luca Piccin</strong><span>Implantes y cirugía bucal</span><em>COEM 28014109</em></div></div>
+          </aside>
+        </article>
+
+        <!-- Estética -->
+        <article class="panel" role="tabpanel" id="p-est" aria-labelledby="t-est" hidden>
+          <div>
+            <h3>Prótesis y estética dental</h3>
+            <p class="panel-intro">La sonrisa es la mejor carta de presentación. Recuperamos función y estética, y rediseñamos tu sonrisa de forma personalizada.</p>
+            <ul class="treatments">
+              <li><h4>Prótesis dentales</h4><p>Elementos artificiales que reemplazan los dientes perdidos, restaurando su anatomía, función y estética.</p><a href="https://stardentalgroup.es/protesis-dentales-boadilla/">Más sobre prótesis</a></li>
+              <li><h4>Estética dental</h4><p>Tratamientos para mejorar la apariencia de tu sonrisa y ganar confianza.</p><a href="https://stardentalgroup.es/estetica-dental-boadilla/">Más sobre estética dental</a></li>
+              <li><h4>Carillas dentales</h4><p>La solución de alta estética que permite rediseñar tu sonrisa de forma mínimamente invasiva.</p><a href="https://stardentalgroup.es/carillas-dentales-boadilla/">Más sobre carillas</a></li>
+              <li><h4>Blanqueamiento dental</h4><p>Un tratamiento personalizado y seguro para lucir unos dientes radiantes.</p><a href="https://stardentalgroup.es/blanqueamiento-dental-boadilla/">Más sobre blanqueamiento</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="estética dental" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar estética dental</a>
+          </div>
+          <aside class="specialists">
+            <p class="specialists-title">Responsable del área</p>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-carolina-molina-garcia-protesis-estetica-web.jpg?w=520&ssl=1" alt="Dra. Carolina Molina"><div><strong>Dra. Carolina Molina</strong><span>Directora médica. Prótesis y estética dental</span><em>COEM 28014033</em></div></div>
+          </aside>
+        </article>
+
+        <!-- Endodoncia -->
+        <article class="panel" role="tabpanel" id="p-endo" aria-labelledby="t-endo" hidden>
+          <div>
+            <h3>Endodoncia</h3>
+            <p class="panel-intro">Conservamos tus dientes sin necesidad de recurrir a la extracción.</p>
+            <ul class="treatments">
+              <li><h4>Endodoncia</h4><p>Consiste en la extirpación de la pulpa del diente, el tejido blando que contiene los nervios y vasos sanguíneos, y su posterior relleno y sellado con un material inerte.</p><a href="https://stardentalgroup.es/endodoncia-boadilla/">Más sobre endodoncia</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="endodoncia" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar endodoncia</a>
+          </div>
+          <aside class="specialists">
+            <p class="specialists-title">Te atiende</p>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-marta-monzon-betancort-endodoncia-web.jpg?w=520&ssl=1" alt="Dra. Marta Monzón"><div><strong>Dra. Marta Monzón</strong><span>Endodoncia</span><em>COEM 28013573</em></div></div>
+          </aside>
+        </article>
+
+        <!-- Odontopediatría -->
+        <article class="panel" role="tabpanel" id="p-ped" aria-labelledby="t-ped" hidden>
+          <div>
+            <h3>Odontopediatría</h3>
+            <p class="panel-intro">Cuidamos la sonrisa de los más pequeños desde sus primeras visitas.</p>
+            <ul class="treatments">
+              <li><h4>Odontopediatría</h4><p>Las visitas regulares al odontopediatra son indispensables para detectar caries y también posibles trastornos en el crecimiento de los maxilares, maloclusiones y problemas en la erupción dentaria.</p><a href="https://stardentalgroup.es/odontopediatria-boadilla/">Más sobre odontopediatría</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="odontopediatría" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita para mi hijo/a</a>
+          </div>
+          <aside class="specialists">
+            <p class="specialists-title">Te atiende</p>
+            <div class="doc"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-isabel-martinez-redondo-odontopediatria-web.jpg?w=520&ssl=1" alt="Dra. Isabel Martínez"><div><strong>Dra. Isabel Martínez</strong><span>Odontopediatría</span><em>COEM 28012109</em></div></div>
+          </aside>
+        </article>
+
+        <!-- General -->
+        <article class="panel" role="tabpanel" id="p-gen" aria-labelledby="t-gen" hidden>
+          <div>
+            <h3>Salud y prevención</h3>
+            <p class="panel-intro">Diagnóstico preciso y tratamientos que protegen tu salud bucal antes de que aparezcan problemas mayores.</p>
+            <ul class="treatments">
+              <li><h4>Limpieza dental</h4><p>Elimina el sarro y las bacterias que el cepillado diario no puede remover y devuelve a tu sonrisa su brillo natural.</p><a href="https://stardentalgroup.es/limpieza-dental-boadilla/">Más sobre limpieza dental</a></li>
+              <li><h4>Periodoncia</h4><p>Tratamos la enfermedad periodontal, que afecta a los tejidos que soportan los dientes: principalmente gingivitis y periodontitis.</p><a href="https://stardentalgroup.es/periodoncia-boadilla/">Más sobre periodoncia</a></li>
+              <li><h4>Odontología conservadora</h4><p>Tecnología de diagnóstico precisa y materiales de alta calidad para tratamientos que respetan tu estructura dental.</p><a href="https://stardentalgroup.es/odontologia-conservadora-boadilla/">Más sobre odontología conservadora</a></li>
+              <li><h4>Bruxismo</h4><p>Encontramos la raíz del problema y te ofrecemos soluciones efectivas para proteger tu sonrisa frente al dolor y el desgaste.</p><a href="https://stardentalgroup.es/bruxismo-boadilla/">Más sobre bruxismo</a></li>
+              <li><h4>Radiología dental</h4><p>Radiología de última generación, la base de un diagnóstico preciso y de tratamientos seguros.</p><a href="https://stardentalgroup.es/radiologia-dental-boadilla/">Más sobre radiología dental</a></li>
+            </ul>
+            <a class="btn btn-primary panel-cta" data-wa data-wa-topic="una revisión o limpieza" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir revisión</a>
+          </div>
+          <aside class="specialists">
+            <div class="general-note"><p><strong>Empieza por aquí.</strong> En tu primera consulta gratuita hacemos un diagnóstico completo y, si lo necesitas, te derivamos al especialista de cada área dentro de la propia clínica.</p></div>
+          </aside>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="urg-title">
+  <div class="wrap">
+    <div class="urgent rv rv-scale">
+      <div>
+        <h2 id="urg-title">¿Tienes una urgencia dental?</h2>
+        <p>Las urgencias dentales no son una cita programada: son una necesidad inmediata que requiere atención especializada sin demora.</p>
+        <a class="urgent-num" href="tel:+34628673477">+34 628 673 477</a>
+      </div>
+      <div class="urgent-actions">
+        <a class="btn btn-light" href="tel:+34628673477"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar a urgencias</a>
+        <a class="btn btn-outline-light" data-wa data-wa-msg="Hola, tengo una urgencia dental. ¿Me pueden atender?" href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section visit" id="primera-visita" style="margin-top:clamp(64px,9vw,120px)">
+  <div class="wrap">
+    <div class="section-head rv">
+      <h2>Tu primera consulta es gratis</h2>
+      <p>No escatimamos esfuerzo ni tiempo durante tu visita. Con la mejor tecnología diagnóstica, saldrás con un plan claro.</p>
+    </div>
+    <ol class="steps" data-stagger="0.15">
+      <li><h3>Pide tu cita</h3><p>Escríbenos por WhatsApp o llámanos. Te buscamos un hueco de lunes a viernes, mañana o tarde.</p></li>
+      <li><h3>Diagnóstico completo</h3><p>Te examinamos con tecnología diagnóstica de última generación y resolvemos todas tus dudas.</p></li>
+      <li><h3>Tu plan personalizado</h3><p>Recibes un plan de tratamiento a tu medida, con opciones de financiación y cobertura de tu aseguradora.</p></li>
+    </ol>
+    <div class="visit-cta rv" style="--d:.3s">
+      <a class="btn btn-primary" data-wa data-wa-msg="Hola, me gustaría reservar mi primera consulta gratuita en Star Dental Boadilla." href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Reservar primera consulta</a>
+      <small>O llámanos al <a href="tel:+34915273670">915 273 670</a></small>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="clinica">
+  <div class="wrap clinic-grid">
+    <div>
+      <div class="section-head rv">
+        <h2>Pon tu sonrisa en nuestras manos</h2>
+        <p>Somos un equipo profesional de vanguardia que se adapta a las necesidades de cada paciente, con experiencias únicas y personalizadas.</p>
+      </div>
+      <ul class="reasons" data-stagger>
+        <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><h3>Profesionalismo y cercanía</h3><p>Profesionales por especialidad en cada una de las áreas de la odontología, con atención multidisciplinar.</p></div></li>
+        <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><h3>Tecnología de vanguardia</h3><p>Instalaciones modernas, tecnología de punta y equipos de última generación para la excelencia de tus tratamientos.</p></div></li>
+        <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><h3>Financiación a medida y aseguradoras</h3><p>Financia tu tratamiento de la forma más cómoda para ti. Además, aceptamos todas las aseguradoras.</p></div></li>
+        <li><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg><div><h3>Sostenibilidad</h3><p>Cumplimos las normas de bioseguridad y eficiencia energética. Clínica completamente digitalizada y equipos radiológicos de última generación.</p></div></li>
+      </ul>
+    </div>
+    <div class="photo-stack" data-stagger="0.12">
+      <img class="p1" loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-tratamiento-revision-limpieza-profesional.jpg?w=900&ssl=1" alt="Tratamiento en un gabinete de Star Dental">
+      <img class="p2" loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-recepcion.jpg?w=640&ssl=1" alt="Recepción de Star Dental en Boadilla del Monte">
+      <img class="p3" loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2016/09/content-slider-4.jpg?w=700&ssl=1" alt="Sillón dental de última generación">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="equipo" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head rv">
+      <h2>Los dentistas que te atenderán</h2>
+      <p>Un equipo multidisciplinar con especialistas colegiados en cada área de la odontología.</p>
+    </div>
+    <div class="team-grid" data-stagger="0.07" data-stagger-cols="4">
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-carolina-molina-garcia-protesis-estetica-web.jpg?w=520&ssl=1" alt="Dra. Carolina Molina"><h3>Dra. Carolina Molina</h3><p>Directora médica. Prótesis y estética dental</p><small>COEM 28014033</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dr-luca-piccin-cirugia-implantes-web2.jpg?w=520&ssl=1" alt="Dr. Luca Piccin"><h3>Dr. Luca Piccin</h3><p>Implantes y cirugía bucal</p><small>COEM 28014109</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dr-jaime-lopez-alvarado-ortodoncia-web.jpg?w=520&ssl=1" alt="Dr. Jaime López Alvarado"><h3>Dr. Jaime López Alvarado</h3><p>Ortodoncia</p><small>COEM 28013833</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-marta-monzon-betancort-endodoncia-web.jpg?w=520&ssl=1" alt="Dra. Marta Monzón"><h3>Dra. Marta Monzón</h3><p>Endodoncia</p><small>COEM 28013573</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-yanetsi-colmenares-penaloza-ortodoncia-web.jpg?w=520&ssl=1" alt="Dra. Yanetsi Colmenares"><h3>Dra. Yanetsi Colmenares</h3><p>Ortodoncia</p><small>COEM 28013129</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-dra-isabel-martinez-redondo-odontopediatria-web.jpg?w=520&ssl=1" alt="Dra. Isabel Martínez"><h3>Dra. Isabel Martínez</h3><p>Odontopediatría</p><small>COEM 28012109</small></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-marcela-suarez-pelaez-auxiliar-web.jpg?w=520&ssl=1" alt="Marcela Suárez"><h3>Marcela Suárez</h3><p>Auxiliar dental</p></div>
+      <div class="member"><img loading="lazy" src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-paola-cordero-nava-recepcion-web.jpg?w=520&ssl=1" alt="Paola Cordero Nava"><h3>Paola Cordero Nava</h3><p>Recepción y gestión de tratamientos</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="wrap">
+    <div class="section-head rv">
+      <h2>Pide tu cita con nuestros dentistas en Boadilla</h2>
+      <p>Nuestros especialistas están para asesorarte. Escríbenos, llámanos o ven a vernos.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <ul class="contact-list" data-stagger="0.06">
+          <li><span class="label">Dirección</span><address><a href="https://www.google.com/maps/search/?api=1&query=Star+Dental+Avenida+Nuevo+Mundo+7+28660+Boadilla+del+Monte" target="_blank" rel="noopener">Avenida Nuevo Mundo, 7<br>28660 Boadilla del Monte, Madrid</a></address></li>
+          <li><span class="label">Teléfono</span><a href="tel:+34915273670">+34 915 273 670</a></li>
+          <li><span class="label">WhatsApp y urgencias</span><a href="tel:+34628673477">+34 628 673 477</a></li>
+          <li><span class="label">Email</span><a href="mailto:info@stardentalgroup.es">info@stardentalgroup.es</a></li>
+          <li>
+            <span class="label">Horario</span>
+            <table class="hours" id="hours">
+              <tbody>
+                <tr data-d="1"><td>Lunes</td><td>10:00 – 14:00 y 16:00 – 20:00</td></tr>
+                <tr data-d="2"><td>Martes</td><td>10:00 – 14:00 y 16:00 – 20:00</td></tr>
+                <tr data-d="3"><td>Miércoles</td><td>10:00 – 14:00 y 16:00 – 20:00</td></tr>
+                <tr data-d="4"><td>Jueves</td><td>10:00 – 14:00 y 16:00 – 20:00</td></tr>
+                <tr data-d="5"><td>Viernes</td><td>10:00 – 14:00 y 16:00 – 20:00</td></tr>
+                <tr data-d="6" class="closed"><td>Sábado</td><td>Cerrado</td></tr>
+                <tr data-d="0" class="closed"><td>Domingo</td><td>Cerrado</td></tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        <div class="contact-actions">
+          <a class="btn btn-light" data-wa href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+          <a class="btn btn-outline-light" href="tel:+34915273670"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/stardentalgroupboadilla/" target="_blank" rel="noopener" aria-label="Instagram de Star Dental"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/stardentalgroupboadilla/" target="_blank" rel="noopener" aria-label="Facebook de Star Dental"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+        </div>
+      </div>
+      <div class="map rv rv-scale" id="map" style="--d:.15s">
+        <img src="https://i0.wp.com/stardentalgroup.es/wp-content/uploads/2024/12/stardental-recepcion.jpg?w=640&ssl=1" alt="" aria-hidden="true">
+        <div class="map-load">
+          <svg width="40" height="40" style="color:#fff" aria-hidden="true"><use href="#i-pin"/></svg>
+          <p>Avenida Nuevo Mundo, 7, Boadilla del Monte. Al pulsar «Ver mapa» se cargará Google Maps, y Google puede instalar cookies y recibir datos de tu navegación. <a href="politica-cookies.html#mapa">Más información</a></p>
+          <button class="btn btn-light" id="load-map" type="button">Ver mapa</button>
+          <a class="btn btn-outline-light" href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Nuevo+Mundo+7+28660+Boadilla+del+Monte" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div>
+      <span class="footer-logo"><img src="https://stardentalgroup.es/wp-content/uploads/2019/10/Dise%C3%B1o-sin-t%C3%ADtulo-27.png" alt="Star Dental" width="76" height="40"></span>
+      <p class="owner">Titular: María Carolina Molina García, NIF 54479485Y<br>Avenida Nuevo Mundo, 7, 28660 Boadilla del Monte, Madrid</p>
+    </div>
+    <nav class="legal" aria-label="Legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="politica-privacidad.html">Política de privacidad</a>
+      <a href="politica-cookies.html">Política de cookies</a>
+      <a href="https://stardentalgroup.es/blog/">Blog</a>
+    </nav>
+    <span>© <span id="year">2026</span> Star Dental Group, Boadilla del Monte</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="https://wa.me/34628673477" aria-label="Escribir a Star Dental por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+<div class="mobile-bar">
+  <a class="btn btn-ghost" href="tel:+34915273670"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
+  <a class="btn btn-wa" data-wa href="https://wa.me/34628673477"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+</div>
+
+<script>
+(function(){
+  var WA = "34628673477";
+  var base = "Hola, me gustaría pedir cita en Star Dental Boadilla.";
+  // WhatsApp links with a prefilled message
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var msg = a.getAttribute("data-wa-msg") ||
+      (a.getAttribute("data-wa-topic") ? "Hola, me gustaría pedir cita en Star Dental Boadilla para " + a.getAttribute("data-wa-topic") + "." : base);
+    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // header
+  var header = document.querySelector(".site-header");
+  var progressBar = header.querySelector(".progress");
+  var waFloat = document.querySelector(".wa-float");
+  var hero = document.querySelector(".hero");
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links a"));
+  var navTargets = navLinks.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  var ticking = false;
+  function onScrollFrame(){
+    ticking = false;
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    header.classList.toggle("scrolled", y > 8);
+    progressBar.style.setProperty("--sp", max > 0 ? Math.min(1, y / max).toFixed(4) : 0);
+    waFloat.classList.toggle("show", y > hero.offsetHeight * 0.6);
+    var mark = y + window.innerHeight * 0.35, current = -1;
+    navTargets.forEach(function(t, i){ if (t && t.offsetTop <= mark) current = i; });
+    navLinks.forEach(function(a, i){ a.classList.toggle("active", i === current); });
+  }
+  var onScroll = function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScrollFrame); } };
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", onScroll);
+  onScrollFrame();
+  var menuBtn = document.querySelector(".menu-btn");
+  menuBtn.addEventListener("click", function(){
+    var open = header.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open);
+    menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  });
+  document.querySelectorAll(".nav-links a").forEach(function(a){
+    a.addEventListener("click", function(){ header.classList.remove("open"); menuBtn.setAttribute("aria-expanded", false); });
+  });
+
+  // treatment tabs
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".area-tab"));
+  function select(tab, focus){
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute("aria-selected", on);
+      t.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(t.getAttribute("aria-controls"));
+      p.hidden = !on;
+      if (on){ p.classList.remove("enter"); void p.offsetWidth; p.classList.add("enter"); }
+    });
+    if (focus) tab.focus();
+    if (window.matchMedia("(max-width:980px)").matches) tab.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener("click", function(){ select(t); });
+    t.addEventListener("keydown", function(e){
+      var k = e.key, n = null;
+      if (k === "ArrowDown" || k === "ArrowRight") n = tabs[(i+1) % tabs.length];
+      if (k === "ArrowUp" || k === "ArrowLeft") n = tabs[(i-1+tabs.length) % tabs.length];
+      if (k === "Home") n = tabs[0];
+      if (k === "End") n = tabs[tabs.length-1];
+      if (n){ e.preventDefault(); select(n, true); }
+    });
+  });
+
+  // open / closed status in Madrid time
+  try {
+    var parts = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+    var get = function(t){ return (parts.find(function(p){return p.type===t;})||{}).value; };
+    var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(get("weekday"));
+    var mins = parseInt(get("hour"),10)*60 + parseInt(get("minute"),10);
+    var weekday = day >= 1 && day <= 5;
+    var open = weekday && ((mins >= 600 && mins < 840) || (mins >= 960 && mins < 1200));
+    var dot = document.getElementById("status-dot"), txt = document.getElementById("status-text"), sub = document.getElementById("status-sub");
+    if (open){
+      dot.classList.add("on");
+      txt.textContent = "Abierto ahora";
+      sub.textContent = mins < 840 ? "Hasta las 14:00, por la tarde de 16:00 a 20:00" : "Hasta las 20:00";
+    } else {
+      txt.textContent = "Cerrado ahora";
+      if (weekday && mins < 600) sub.textContent = "Abrimos hoy a las 10:00";
+      else if (weekday && mins >= 840 && mins < 960) sub.textContent = "Abrimos de nuevo a las 16:00";
+      else sub.textContent = "Escríbenos por WhatsApp y te respondemos";
+    }
+    var row = document.querySelector('#hours tr[data-d="' + day + '"]');
+    if (row) row.classList.add("today");
+  } catch(e){}
+
+  // map facade (loads Google Maps only on request)
+  document.getElementById("load-map").addEventListener("click", function(){
+    var m = document.getElementById("map");
+    m.innerHTML = '<iframe title="Mapa de Star Dental en Boadilla del Monte" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Avenida+Nuevo+Mundo+7,+28660+Boadilla+del+Monte,+Madrid&output=embed"></iframe>';
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // ---- motion ----
+  var root = document.documentElement;
+  var motion = root.classList.contains("js");
+
+  // portraits get a clipping frame so they can zoom on hover
+  document.querySelectorAll(".member > img").forEach(function(img){
+    var f = document.createElement("div"); f.className = "zoom";
+    img.parentNode.insertBefore(f, img); f.appendChild(img);
+  });
+
+  // staggered groups: children become reveal items with growing delay
+  document.querySelectorAll("[data-stagger]").forEach(function(group){
+    var step = parseFloat(group.getAttribute("data-stagger")) || 0.09;
+    var cols = parseInt(group.getAttribute("data-stagger-cols") || "0", 10);
+    Array.prototype.forEach.call(group.children, function(el, i){
+      el.classList.add("rv");
+      el.style.setProperty("--d", ((cols ? i % cols : i) * step).toFixed(2) + "s");
+    });
+  });
+
+  // scroll reveal, with a safety net so nothing stays hidden
+  var rvs = Array.prototype.slice.call(document.querySelectorAll(".rv"));
+  if (motion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {rootMargin:"0px 0px -8% 0px"});
+    rvs.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){
+      rvs.forEach(function(el){ if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("in"); });
+    }, 2500);
+  } else {
+    rvs.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  // treatment marquee: duplicate for a seamless loop, pause off-screen
+  var mq = document.querySelector("[data-marquee]");
+  var track = mq.querySelector(".marquee-track");
+  Array.prototype.slice.call(track.children).forEach(function(a){
+    var c = a.cloneNode(true);
+    c.setAttribute("aria-hidden", "true"); c.tabIndex = -1;
+    track.appendChild(c);
+  });
+  if ("IntersectionObserver" in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ mq.classList.toggle("off", !e.isIntersecting); }); }).observe(mq);
+  }
+  // pause / resume all continuous motion
+  var mt = document.getElementById("motion-toggle"), ml = document.getElementById("motion-label");
+  mt.addEventListener("click", function(){
+    var paused = root.classList.toggle("motion-paused");
+    mt.setAttribute("aria-pressed", paused);
+    ml.textContent = paused ? "Reanudar animaciones" : "Pausar animaciones";
+  });
+
+  // clicking a treatment opens its area in the directory
+  track.addEventListener("click", function(e){
+    var a = e.target.closest("a[data-area]");
+    if (!a) return;
+    var tab = document.getElementById(a.getAttribute("data-area"));
+    if (tab) select(tab);
+  });
+})();
+</script>
+</body>
+</html>
