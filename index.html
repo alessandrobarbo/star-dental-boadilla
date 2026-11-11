@@ -304,7 +304,9 @@ p{margin:0}
 /* hero: the one orchestrated moment */
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
 .hero h1 .ln > span{display:block}
-.hero-photo{position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
+.ai-label{position:absolute;top:16px;left:18px;z-index:1;padding:5px 11px;border-radius:999px;background:rgba(10,37,64,.62);color:#fff;font-size:.78rem;font-weight:500;line-height:1.3;backdrop-filter:blur(6px)}
+@media (max-width:480px){.ai-label{top:10px;left:12px;font-size:.72rem;padding:4px 9px}}
+.hero-photo{margin:0;position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 120px;background:var(--mist)}
 .hero-media img{border-radius:0;transform-origin:56% 38%}
 @media (max-width:880px){.hero-photo{border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 72px}}
 .js .hero .offer{animation:fadeup .7s var(--ease) .05s both}
@@ -457,7 +459,7 @@ p{margin:0}
       </div>
     </div>
     <div class="hero-media">
-      <div class="hero-photo"><img src="images/sonrisa-hero.webp" alt="Mujer sonriendo con una sonrisa cuidada" width="1536" height="1024" fetchpriority="high"></div>
+      <figure class="hero-photo"><img src="images/sonrisa-hero.webp" alt="Mujer sonriendo con una sonrisa cuidada" width="1536" height="1024" fetchpriority="high"><figcaption class="ai-label">Imagen ilustrativa generada con IA</figcaption></figure>
       <div class="status-card" aria-live="polite">
         <span class="status-line"><span class="dot" id="status-dot"></span><span id="status-text">Lunes a viernes</span></span>
         <small id="status-sub">10:00 – 14:00 y 16:00 – 20:00</small>
